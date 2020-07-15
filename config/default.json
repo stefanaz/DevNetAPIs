@@ -1,4 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://newuser1:newuser1@mernclusterdev.0mceq.mongodb.net/MERNClusterDev?retryWrites=true&w=majority",
-  "jwtSecret": "mysecrethere"
-}
