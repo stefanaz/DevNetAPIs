@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "3b9c7111-c0ba-4d9d-ba3e-8e8c9d507739",
+		"name": "Profiles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create/Update profile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYwZWJkNTA3NGQ4NmE2NzlhMGQwN2RiIn0sImlhdCI6MTU5NDgwMTQ4OCwiZXhwIjoxNTk1MTYxNDg4fQ.5jXjd-HXS6FQJWpo3NfKjcmcmXwFMYAdRkqYmRKlrjc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"company\": \"t4estssss\",\n\t\"status\": \"June\",\n\t\"website\": \"https://www.test2.com\",\n\t\"skills\": \"HTML, CSS, JS\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get logged in users profile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYwZGI3N2E2YzU4YmQxZjYwOGM1N2Y0In0sImlhdCI6MTU5NDczNTMxMiwiZXhwIjoxNTk1MDk1MzEyfQ._kbCK3wwyknlE8R3ebqA67mtzqTgtD4RSBdBuqUJMzw",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/me",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"me"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Profile by user id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/user/5f0db77a6c58bd1f608c57f4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"user",
+						"5f0db77a6c58bd1f608c57f4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Profile and User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYwZWJkNTA3NGQ4NmE2NzlhMGQwN2RiIn0sImlhdCI6MTU5NDgwMTQ4OCwiZXhwIjoxNTk1MTYxNDg4fQ.5jXjd-HXS6FQJWpo3NfKjcmcmXwFMYAdRkqYmRKlrjc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Profile Experience",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYwZGI3N2E2YzU4YmQxZjYwOGM1N2Y0In0sImlhdCI6MTU5NDgwMjQwNiwiZXhwIjoxNTk1MTYyNDA2fQ.cEDUM5hdfwvm_NXGS2bmTCf_bzL7bbKfFqxMUtsG78Q"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/experience/5f0ec1de41a16c6bfed5beb7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"experience",
+						"5f0ec1de41a16c6bfed5beb7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Profile Education",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYwZGI3N2E2YzU4YmQxZjYwOGM1N2Y0In0sImlhdCI6MTU5NDgwMjQwNiwiZXhwIjoxNTk1MTYyNDA2fQ.cEDUM5hdfwvm_NXGS2bmTCf_bzL7bbKfFqxMUtsG78Q"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/education/5f0ec91eb7e0387439691c68",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"education",
+						"5f0ec91eb7e0387439691c68"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Experience",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYwZGI3N2E2YzU4YmQxZjYwOGM1N2Y0In0sImlhdCI6MTU5NDgwMjQwNiwiZXhwIjoxNTk1MTYyNDA2fQ.cEDUM5hdfwvm_NXGS2bmTCf_bzL7bbKfFqxMUtsG78Q"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": "Json content type",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"test2 title\",\n\t\"company\": \"tes2t company\",\n\t\"location\": \"test2 location\",\n\t\"from\": \"08-11-2010\",\n\t\"current\": true,\n\t\"description\": \"test2 description\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/expericence",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"expericence"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Education",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-auth-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWYwZGI3N2E2YzU4YmQxZjYwOGM1N2Y0In0sImlhdCI6MTU5NDgwMjQwNiwiZXhwIjoxNTk1MTYyNDA2fQ.cEDUM5hdfwvm_NXGS2bmTCf_bzL7bbKfFqxMUtsG78Q"
+					},
+					{
+						"description": "Json content type",
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"school\": \"test1 school\",\n\t\"degree\": \"test1 degree\",\n\t\"fieldofstudy\": \"test1 fieldofstudy\",\n\t\"from\": \"08-11-2010\",\n\t\"current\": true,\n\t\"description\": \"test1 description\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/profile/education",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"education"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get GitHub Profiles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/profile/github/stefanaz",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"profile",
+						"github",
+						"stefanaz"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
