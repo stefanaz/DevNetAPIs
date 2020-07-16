@@ -1,3 +1,8 @@
+# Project Description
+
+This is an Express.js **REST API** project.  
+It contains all needed APIs for the REACT front end [**DevelopersNetwork**](https://github.com/stefanaz/DevelopersNetwork) project.
+
 # API structure:
 
 ## Users & Auth:
@@ -31,8 +36,6 @@
 - Delete Comment from Post **[DELETE, /api/posts/comment/:post_id]/:comment_id]**
 
 # Tech Info:
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
