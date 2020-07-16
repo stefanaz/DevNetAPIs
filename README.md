@@ -1,6 +1,7 @@
 # Project Description
 
 This is an Express.js **REST API** project.  
+Project uses MongoDB to store users, profiles and posts/comments collections.
 It contains all needed APIs for the REACT front end [**DevelopersNetwork**](https://github.com/stefanaz/DevelopersNetwork) project.
 
 # API structure:
