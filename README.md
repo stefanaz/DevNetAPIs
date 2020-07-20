@@ -21,7 +21,7 @@ It contains all needed APIs for the REACT front end [**DevelopersNetwork**](http
 - Delete Profile and User **[DELETE, /api/profile]**
 - Delete Profile Experience **[DELETE, /api/profile/experience/:experience_id]**
 - Delete Profile Education **[DELETE, /api/profile/education/:education_id]**
-- Add Experience **[PUT, /api/profile/expericence]**
+- Add Experience **[PUT, /api/profile/experience]**
 - Add Education **[PUT, /api/profile/education]**
 - Get GitHub Profiles **[GET, /api/profile/github/:githubloginname]**
 
